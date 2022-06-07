@@ -11,7 +11,48 @@
 
 .topleft,.topright{
     flex : 3;
+    display: flex;
+    align-items : center;
+    justify-content : center;
 }
 .topcenter{
     flex : 6;
+
+}
+
+.SocialLinks{
+    font-size : 20px ;
+    margin-right: 10px;
+    color : #01B69B;
+    cursor: pointer;
+}
+
+
+.Logo{
+    width : 80px;
+    height : 80px;
+    border-radius : 50% ;
+    object-fit: cover;
+}
+
+.NavBarList{
+    display : flex; 
+    margin : 0 ;
+    padding : 0 ;
+    justify-content: center;
+    list-style : none;
+}
+
+.NavLink{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 370;
+    cursor: pointer;
+}
+
+.SearchIcon{
+    font-size : 18px;
+    color : #7CDACB ;
+    cursor: pointer;
+    margin-left: 15px;
 }

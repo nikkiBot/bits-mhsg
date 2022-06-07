@@ -5,9 +5,9 @@ export default function NavBar() {
     <div className = "Nav">
 
         <div className="topleft">
-        <i className="fa-brands fa-facebook-square"></i>
-        <i className="fa-brands fa-discord"></i>
-        <i className="fa-brands fa-instagram"></i>
+        <i className="SocialLinks fa-brands fa-facebook-square"></i>
+        <i className="SocialLinks fa-brands fa-discord"></i>
+        <i className="SocialLinks fa-brands fa-instagram"></i>
         </div>
 
         <div className="topcenter">
@@ -22,7 +22,8 @@ export default function NavBar() {
         </div>
 
         <div className="topright">
-            <img src="../public/Logo_Short.png" alt="not found yet" />
+            <img className="Logo" src={require('../images/Logo_Short.png')} alt="not found yet"  />
+            <i class="SearchIcon fa-solid fa-magnifying-glass"></i>
         </div>
         
 
