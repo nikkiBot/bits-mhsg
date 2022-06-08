@@ -4,11 +4,11 @@ import { Carousel } from "react-bootstrap";
 
 const CarouselContainer = () =>{
     return (
-        <Carousel>
+        <Carousel className="CarouselContainer">
         <Carousel.Item interval={2000} pause = {false}>
           <img
-            className="d-block w-100"
-            src={require('./carousel_images/Long_Long.png')}
+            className="carouselimg d-block w-100"
+            src={require('./carousel_images/Logo_Long.png')}
             alt="logo"
           />
           <Carousel.Caption>
@@ -19,7 +19,7 @@ const CarouselContainer = () =>{
 
         <Carousel.Item interval={2000} pause = {false}>
           <img
-            className="d-block w-100"
+            className="carouselimg d-block w-100"
             src={require('./carousel_images/game-night.jpg')}
             alt="game night"
           />
@@ -31,7 +31,7 @@ const CarouselContainer = () =>{
 
         <Carousel.Item interval={2000}>
           <img
-            className="d-block w-100"
+            className="carouselimg d-block w-100"
             src={require('./carousel_images/game-night-1.jpg')}
             alt="game night 1"
           />
@@ -43,7 +43,7 @@ const CarouselContainer = () =>{
 
         <Carousel.Item interval={2000}>
           <img
-            className="d-block w-100"
+            className="carouselimg d-block w-100"
             src={require('./carousel_images/silent-struggle.jpg')}
             alt="Silent Struggle"
           />
@@ -55,7 +55,7 @@ const CarouselContainer = () =>{
 
         <Carousel.Item interval={2000} pause = {false}>
           <img
-            className="d-block w-100"
+            className="carouselimg d-block w-100"
             src={require('./carousel_images/silent-struggle-1.jpg')}
             alt="Silent Struggle"
           />
@@ -67,7 +67,7 @@ const CarouselContainer = () =>{
 
         <Carousel.Item interval={2000} pause = {false}>
           <img
-            className="d-block w-100"
+            className="carouselimg d-block w-100"
             src={require('./carousel_images/talk-it-out.jpg')}
             alt="talk-it-out"
           />
@@ -79,7 +79,7 @@ const CarouselContainer = () =>{
 
         <Carousel.Item interval={2000} pause = {false}>
           <img
-            className="d-block w-100"
+            className="carouselimg d-block w-100"
             src={require('./carousel_images/talk-it-out-1.jpg')}
             alt="talk-it-out"
           />
