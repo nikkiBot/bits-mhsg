@@ -5,10 +5,10 @@ import { Carousel } from "react-bootstrap";
 const CarouselContainer = () =>{
     return (
         <Carousel>
-        <Carousel.Item>
+        <Carousel.Item interval={2000} pause = {false}>
           <img
             className="d-block w-100"
-            src="./carousel_images/Long_Long.png"
+            src={require('./carousel_images/Long_Long.png')}
             alt="logo"
           />
           <Carousel.Caption>
@@ -17,10 +17,10 @@ const CarouselContainer = () =>{
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item interval={2000} pause = {false}>
           <img
             className="d-block w-100"
-            src="./carousel_images/game-night.jpg"
+            src={require('./carousel_images/game-night.jpg')}
             alt="game night"
           />
           <Carousel.Caption>
@@ -29,10 +29,10 @@ const CarouselContainer = () =>{
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item interval={2000}>
           <img
             className="d-block w-100"
-            src="./carousel_images/game-night-1.jpg"
+            src={require('./carousel_images/game-night-1.jpg')}
             alt="game night 1"
           />
           <Carousel.Caption>
@@ -41,10 +41,10 @@ const CarouselContainer = () =>{
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item interval={2000}>
           <img
             className="d-block w-100"
-            src="./carousel_images/silent-struggle.jpg"
+            src={require('./carousel_images/silent-struggle.jpg')}
             alt="Silent Struggle"
           />
           <Carousel.Caption>
@@ -53,10 +53,10 @@ const CarouselContainer = () =>{
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item interval={2000} pause = {false}>
           <img
             className="d-block w-100"
-            src="./carousel_images/silent-struggle-1.jpg"
+            src={require('./carousel_images/silent-struggle-1.jpg')}
             alt="Silent Struggle"
           />
           <Carousel.Caption>
@@ -65,10 +65,10 @@ const CarouselContainer = () =>{
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item interval={2000} pause = {false}>
           <img
             className="d-block w-100"
-            src="./carousel_images/talk-it-out.jpg"
+            src={require('./carousel_images/talk-it-out.jpg')}
             alt="talk-it-out"
           />
           <Carousel.Caption>
@@ -77,10 +77,10 @@ const CarouselContainer = () =>{
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item interval={2000} pause = {false}>
           <img
             className="d-block w-100"
-            src="./carousel_images/talk-it-out-1.jpg"
+            src={require('./carousel_images/talk-it-out-1.jpg')}
             alt="talk-it-out"
           />
           <Carousel.Caption>
