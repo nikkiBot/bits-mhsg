@@ -1,4 +1,3 @@
-import { Button } from "../components/button/Button"
 import "./sidebar.css"
 
 export default function Sidebar() {
