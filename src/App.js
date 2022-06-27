@@ -22,7 +22,7 @@ function App() {
       gapi.load('client:auth2',start) ;
   });
   
-  var accessToken = gapi.auth.getToken().access_token ;
+  // var accessToken = gapi.auth.getToken().access_token ;
 
   return (
     <>
