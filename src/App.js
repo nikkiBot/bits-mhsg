@@ -1,7 +1,7 @@
 import NavBar from "./NavBar/NavBar";
 import Home from "./pages/home/Home";
-import Logout from "./components/login/Logout";
-import Login from "./components/login/Login";
+//import Logout from "./components/login/Logout";
+//import Login from "./components/login/Login";
 import {useEffect} from 'react';
 import { gapi } from 'gapi-script';
 
@@ -22,7 +22,7 @@ function App() {
       gapi.load('client:auth2',start) ;
   });
   
-  var accessToken = gapi.auth.getToken().access_token ;
+  //var accessToken = gapi.auth.getToken().access_token ;
 
   return (
     <>
