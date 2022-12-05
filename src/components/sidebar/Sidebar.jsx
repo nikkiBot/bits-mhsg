@@ -1,5 +1,9 @@
 import "./sidebar.css"
-
+/**
+ * @param {boolean} props.show
+ * @brief This component is the sidebar of the home page.
+ * @returns sidebar component to the home page.
+ */
 export default function Sidebar() {
   return (
     <div className="sidebar">

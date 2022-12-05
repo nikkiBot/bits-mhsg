@@ -1,4 +1,4 @@
-import CarouselContainer from "../components/CarouselContainer"
+import CarouselContainer from "../CarouselContainer"
 import "./header.css"
 
 export default function Header() {

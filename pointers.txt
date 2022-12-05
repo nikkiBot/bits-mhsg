@@ -1,0 +1,49 @@
+https://www.npmjs.com/package/@react-oauth/google
+https://stackoverflow.com/questions/73338626/error-while-installing-react-google-login
+https://jsdoc.app/about-getting-started.html
+https://www.youtube.com/watch?v=YK-GurROGIg -> jsdoc documentation
+https://www.youtube.com/playlist?list=PLws6LF6K-IU-zzbgwzyHh9IQ1zCpBwwnf -> proper oauth studied
+https://stackoverflow.com/questions/66347476/retrive-pdfs-link-from-google-drive-and-upload-it-on-mongodb
+
+
+postDesc -> postBrief
+
+//Can be used for comments part
+export default function Write() {
+    return (
+        <div className="write">
+            <form className="writeForm">
+                < className="write FormGroup">
+                    <label htmlFor="fileInput">
+                        <i className="singlePostIcon fa-solid fa-comment"></i>
+                    </label>
+                    <input type="file" id="fileInput" style={{display:"none"}} />
+                    <input type="text" placeholder="Title" className="writeInput"/>
+                </div>
+                <div className="writeFormGroup">
+                    <textarea placeholder="comment" "type="text" className="writeInput"></textarea>
+                </div>
+                <button className = "Submit"> Comment </button>
+            </form>
+        </div>
+    )
+}
+Upgrade all <Switch> elements to <Routes> :
+    React Router v6 introduces a Routes component that is kind of like Switch, but a lot more powerful. The main advantages of Routes over Switch are:
+    All <Route>s and <Link>s inside a <Routes> are relative. This leads to leaner and more predictable code in <Route path> and <Link to> Routes are chosen based on the best of being traversed in order. This avoids bugs due to unreachable routes because they were defined later in your <Switch> Routes may be nested in one place instead of being spread out in different components. In small to medium-sized apps, this lets you easily see all your routes at once. In large apps, you can still nest routes in bundles that you load dynamically via React.lazy In order to use v6, you'll need to convert all your <Switch> elements to <Routes>. If you already made the upgrade to v5.1, you're halfway there.
+
+
+
+useEffect(() => {
+    function start(){
+      gapi.client.init({
+        clientId: clientId ,
+        scope : ""
+      })
+    };
+
+
+      gapi.load('client:auth2',start) ;
+  });
+  
+  //var accessToken = gapi.auth.getToken().access_token ;
