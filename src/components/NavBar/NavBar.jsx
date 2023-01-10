@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./NavBar.css"
 
 export default function NavBar() {
-  const user = true;
+  // const user = true;
 
   return (
     <div className = "Nav">
@@ -15,24 +15,12 @@ export default function NavBar() {
 
         <div className="topcenter">
             <ul className="NavBarList">
-                <li className="NavLink">
-                  <Link to="/" className="link">Home</Link>
-                </li>
-                <li className="NavLink">
-                  <Link to="/" className="link">Articles</Link>
-                </li>
-                <li className="NavLink">
-                  <Link to="/" className="link">Events</Link>
-                </li>
-                <li className="NavLink">
-                  <Link to="/" className="link">What's Next</Link>
-                </li>
-                <li className="NavLink">
-                  <Link to="/" className="link">About Us</Link>
-                </li>
-                <li className="NavLink">
-                  {user && "Logout"}
-                </li>
+                <li className="NavLink">Home</li>
+                <li className="NavLink">Articles</li>
+                <li className="NavLink">Events</li>
+                <li className="NavLink">What's Next</li>
+                <li className="NavLink">About Us</li>
+                <li className="NavLink">Home</li>
             </ul>
         </div>
 

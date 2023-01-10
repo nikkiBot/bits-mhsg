@@ -5,8 +5,9 @@ https://www.youtube.com/watch?v=YK-GurROGIg -> jsdoc documentation
 https://www.youtube.com/playlist?list=PLws6LF6K-IU-zzbgwzyHh9IQ1zCpBwwnf -> proper oauth studied
 https://stackoverflow.com/questions/66347476/retrive-pdfs-link-from-google-drive-and-upload-it-on-mongodb
 
-
+https://picsum.photos/
 postDesc -> postBrief
+https://www.youtube.com/watch?v=Ul3y1LXxzdU
 
 //Can be used for comments part
 export default function Write() {
