@@ -3,7 +3,7 @@ import "./whatsnext.css"
 export default function Whatsnext() {
   return (
     <div>
-        djksdhkdjhkjsdhjkds
+        djksdhkdjhkjsdhjkds whats next
     </div>
 )
 }

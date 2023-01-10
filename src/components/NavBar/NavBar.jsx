@@ -1,4 +1,5 @@
 // import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 import "./NavBar.css"
 
 export default function NavBar() {
@@ -15,12 +16,14 @@ export default function NavBar() {
 
         <div className="topcenter">
             <ul className="NavBarList">
-                <li className="NavLink">Home</li>
-                <li className="NavLink">Articles</li>
-                <li className="NavLink">Events</li>
-                <li className="NavLink">What's Next</li>
-                <li className="NavLink">About Us</li>
-                <li className="NavLink">Home</li>
+                {/* <li className="NavLink">Home</li> */}
+                {/* <li className="NavLink">Articles</li> */}
+                {/* <li className="NavLink">What's Next</li> */}
+                {/* <li className="NavLink">About Us</li> */}
+                <li className="NavLink"> <Link to="/" activeClassName="active-nav-link">Home</Link></li>
+                <li className="NavLink"> <Link to="/Posts" activeClassName="active-nav-link">Articles</Link></li>
+                <li className="NavLink"> <Link to="/Events" activeClassName="active-nav-link">Events</Link></li>
+                <li className="NavLink"> <Link to="/Whatsnext" activeClassName="active-nav-link">What's Next</Link></li>
             </ul>
         </div>
 
