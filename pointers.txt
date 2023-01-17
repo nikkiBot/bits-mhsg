@@ -7,7 +7,7 @@ https://stackoverflow.com/questions/66347476/retrive-pdfs-link-from-google-drive
 
 https://picsum.photos/
 postDesc -> postBrief
-https://www.youtube.com/watch?v=Ul3y1LXxzdU
+https://www.youtube.com/watch?v=Ul3y1LXxzdU - React Router v6 
 
 //Can be used for comments part
 export default function Write() {
