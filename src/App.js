@@ -41,6 +41,7 @@ function App() {
     <Routes>
       <Route path = "/" element={ //Homepage
         <>
+          <div id="signin_div"> </div>
           <NavBar/> 
           <Home/> 
         </>
