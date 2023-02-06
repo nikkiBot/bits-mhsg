@@ -8,13 +8,15 @@ import { Link } from "react-router-dom"
 export const Post = ({post}) => {
   return (
     <div className="post">
+      {/* console.log(post._id);
+      console.log(post.postID); */}
       {/* {post.postCover && the next image component - to be added later} */}
         <img
         className="postImg"
         src={require('../carousel_images/silent-struggle-1.jpg')}
         alt="img not rendered"/>
         <div className="postInfo">
-          <Link to={`posts/${post._id}`} className="link">
+          <Link to={`Posts/${post._id}`} className="link">
             {/**
              * it has to be `posts/${post._id}` because the frontend part to reach a single post was written that way
              * Do not confuse with the localhost:5000/api/posts/_id url

@@ -6,15 +6,15 @@ import { useState } from "react";
 
 export const SinglePost = () => {
   const location = useLocation();
-  var path = location.pathname.split('/')[2];
+  const path = location.pathname.split('/')[2];
   console.log(path);
 
-  const [post, setPost] = useState({})
+  const [post, setPost] = useState({});
 
   useEffect(() => {
     const getPost = async () => {
-      const res = axios.get("posts/" + path);
-      console.log(res);
+      const res = await axios.get( "http://localhost:5000/api/posts/" + path);
+      setPost(res.data);
     };
     getPost();
   }, [path]); //path here means
@@ -22,6 +22,7 @@ export const SinglePost = () => {
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
+        { /**post.photo && so and so later */ }
         <img
         src = {require("../carousel_images/silent-struggle.jpg")}
         alt = ""
@@ -29,21 +30,18 @@ export const SinglePost = () => {
         />
       </div>
       <h1 className="singlePostTitle">
-        Lorem ipsum dolor sit amet.
+        {post.title}
       </h1>
       <div className="singlePostReact">
         <i className="singlePostIcon fa-solid fa-heart"></i>
         <i className="singlePostIcon fa-solid fa-comment"></i>
       </div>
       <div className="singlePostInfo">
-        <span className="singlePostWriter">Written by: <b>John</b></span>
-        <span className="singlePostDate">1 hour ago</span>
+        <span className="singlePostWriter">Written by: <b>{post.postAuthor}</b></span>
+        <span className="singlePostDate">{new Date(post.createdAt).toDateString()}</span>
       </div>
       <p className="singlePostDesc">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, officia temporibus esse tempora expedita numquam error delectus voluptates neque earum recusandae, nihil soluta voluptate exercitationem quidem accusamus cum tempore ex?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, officia temporibus esse tempora expedita numquam error delectus voluptates neque earum recusandae, nihil soluta voluptate exercitationem quidem accusamus cum tempore ex?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, officia temporibus tempora expedita numquam error delectus voluptates neque earum recusandae, nihil soluta voluptate exercitationem quidem accusamus cum tempore ex?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, officia temporibus tempora expedita numquam error delectus voluptates neque earum recusandae, nihil soluta voluptate exercitationem quidem accusamus cum tempore ex?
+        {post.postDescription} {/** not working please help github.  */}
       </p>
     </div>
   )
