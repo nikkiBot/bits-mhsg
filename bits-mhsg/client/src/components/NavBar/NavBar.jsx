@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import "./NavBar.css"
 
 export default function NavBar() {
@@ -9,9 +9,9 @@ export default function NavBar() {
     <div className = "Nav">
 
         <div className="topleft">
-        <i className="SocialLinks fa-brands fa-facebook-square"></i>
-        <i className="SocialLinks fa-brands fa-discord"></i>
-        <i className="SocialLinks fa-brands fa-instagram"></i>
+        <a href="https://www.facebook.com/groups/BITS.MHSG" target="_blank"><i className="SocialLinks fa-brands fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/bits.mhsg/" target="_blank"><i className="SocialLinks fa-brands fa-discord"></i></a>
+        <a href="https://www.instagram.com/bits.mhsg/" target="_blank"><i className="SocialLinks fa-brands fa-instagram"></i></a>
         </div>
 
         <div className="topcenter">
@@ -20,19 +20,25 @@ export default function NavBar() {
                 {/* <li className="NavLink">Articles</li> */}
                 {/* <li className="NavLink">What's Next</li> */}
                 {/* <li className="NavLink">About Us</li> */}
-                <li className="NavLink"> <NavLink to="/" className="active-nav-link">Home</NavLink></li>
-                <li className="NavLink"> <NavLink to="/Posts" className="active-nav-link">Articles</NavLink></li>
-                <li className="NavLink"> <NavLink to="/Events" className="active-nav-link">Events</NavLink></li>
-                <li className="NavLink"> <NavLink to="/Whatsnext" className="active-nav-link">What's Next</NavLink></li>
+                <li className="NavLink"> <Link to="/" activeClassName="active-nav-link navTxt">Home</Link></li>
+                <li className="NavLink"> <Link to="/Articles" activeClassName="active-nav-link navTxt">Articles</Link></li>
+                <li className="NavLink"> <Link to="/Events" activeClassName="active-nav-link navTxt">Events</Link></li>
+                <li className="NavLink"> <Link to="/Resources" activeClassName="active-nav-link navTxt">Resources</Link></li>
+                <li className="NavLink"> <Link to="/Team" activeClassName="active-nav-link navTxt">Team</Link></li>
             </ul>
         </div>
 
         <div className="topright">
             <img className="Logo" src={require('../images/Logo_Short.png')} alt="not found yet"  />
             <i class="SearchIcon fa-solid fa-magnifying-glass"></i>
+            <div className="burger">
+              <div className="burgerLine"></div>
+              <div className="burgerLine"></div>
+              <div className="burgerLine"></div>
+            </div>
         </div>
-        
 
     </div>
   )
 }
+

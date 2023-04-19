@@ -1,0 +1,66 @@
+.resourceCard{
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    padding: 0 10px 0 0;
+    box-shadow: 2px 3px 8px 3.5px rgba(157, 157, 157, 0.372);
+    background-color: rgb(247, 247, 247);
+    margin: 25px 0px;
+    transition: all .2s;
+}
+
+.resourceCard:hover{
+    transform: scale(1.03);
+}
+.cardImg{
+    height: 240px;
+    width: 340px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    width: 550px;
+    margin-left: 10px;
+    /* background-color: rgb(255, 254, 215); */
+}
+
+.cardImgBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    width: 360px;
+}
+.cardTitle{
+    /* font-family: 'Josefin Sans', sans-serif; */
+    margin-top: 5px;
+    font-size: 28px;
+    height: 35px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.cardBody{
+    /* background-color: aqua; */
+    margin-top: 5px;
+    height: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cardLink{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-size: 18px;
+    /* background-color: brown; */
+}
+
+.ahref{
+    text-decoration: none;
+}

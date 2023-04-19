@@ -3,6 +3,9 @@ import Home from "./components/pages/home/Home"
 import { Single } from "./components/pages/single/Single";
 import Events from "./components/pages/events/Events";
 import Whatsnext from "./components/pages/whatsnext/Whatsnext";
+import Resources from "./components/pages/resources/Resources";
+import Articles from "./components/pages/articles/Articles";
+import Team from "./components/pages/team/Team";
 import {Route,Routes} from 'react-router-dom';
 import { useEffect, useState } from "react";
 import jwt_decode from "jwt-decode";
@@ -52,16 +55,29 @@ function App() {
           <Events/> 
         </>
       } />
-      <Route path = "/Whatsnext" element={ //Whatsnext Page
+      <Route path = "/Resources" element={ //Whatsnext Page
         <>
           <NavBar/>
-          <Whatsnext/>
+          <Resources/>
+        </>
+      } />
+      <Route path = "/Articles" element={ //Articles Page
+        <>
+          <NavBar/>
+          <Articles/>
         </>
       } />
       <Route path = "/Posts/:id" element={ //Single post Page
         <>
           <NavBar/>
           <Single/>
+        </>
+      } />
+      <Route path = "/Team" element={ //Single post Page
+        <>
+          <NavBar/>
+          <Team/>
+      
         </>
       } />
     </Routes>

@@ -1,0 +1,230 @@
+.event{
+    margin: 50px 0px;
+    display: flex;
+    
+    box-shadow: 2px 3px 8px 3.5px rgba(157, 157, 157, 0.372);
+    
+    border-radius: 7px;
+    height: 400px;
+    width: fit-content;
+
+}
+
+.eventHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 40px 25px 40px;
+}
+.eventInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.eventTitle{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+}
+.eventDetails{
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+    font-size: 18px;
+}
+
+.eventImg{
+    height: 400px;
+    width: 500px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.eventBody{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    align-items: center;
+}
+
+.eventLink{
+    align-self: flex-end;
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+.icon{
+    margin-left: 4px;
+}
+
+
+.eventBrief{
+    font-size: 18px;
+    height: 190px;
+    margin-bottom: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+
+@media screen and (max-width:450px) {
+    .event {
+        margin: 35px 0px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        box-shadow: 2px 3px 8px 3.5px rgba(157, 157, 157, 0.372);
+        /* border: 2px solid rgb(120, 120, 120); */
+        border-radius: 7px;
+        height: fit-content;
+        width: 340px;
+
+    }
+
+    .eventImg {
+        height: 290px;
+        width: 340px;
+        border-radius: 7px 7px 0px 0px;
+        object-fit: cover;
+    }
+
+    .eventHeading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 10px 25px 10px;
+    }
+
+    .eventInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .eventDetails {
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+        font-size: 19px;
+    }
+
+    .eventTitle {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 23px;
+    }
+
+    .eventBody {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+        align-items: center;
+    }
+
+    .eventDateTxt {
+        display: none;
+    }
+
+    .eventTimeTxt {
+        display: none;
+    }
+
+    .eventVenueTxt {
+        display: none;
+    }
+
+    .eventLink {
+        align-self: flex-end;
+        margin-top: 15px;
+        font-size: 19px;
+    }
+
+    .icon {
+        margin-left: 4px;
+    }
+
+    .eventBrief {
+        font-size: 18px;
+        height: 160px;
+        margin-bottom: 0px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        /* background-color: rgb(194, 226, 255); */
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:900px){
+
+    .event{
+        margin-top: 45px;
+        display: flex;
+        box-shadow: 2px 3px 8px 3.5px rgba(157, 157, 157, 0.372);
+        border-radius: 7px;
+        height: fit-content;
+        
+    }
+    .eventImg{
+        margin: 15px 0px 0px 15px ;
+        height: 280px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+
+    .eventHeading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 18px 0px 15px 0px;
+    }
+
+    .eventInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .eventTitle {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 27px;
+    }
+
+    .eventDetails {
+        display: flex;
+        justify-content: space-around;
+        width: 280px;
+        font-size: 17px;
+    }
+
+    .eventDateTxt {
+        display: none;
+    }
+
+    .eventTimeTxt {
+        display: none;
+    }
+
+    .eventVenueTxt {
+        display: none;
+    }
+
+    .eventBody {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+        align-items: center;
+    }
+
+    .eventLink {
+        align-self: flex-end;
+        margin-top: 18px;
+        font-size: 19px;
+    }
+ 
+    .eventBrief {
+        font-size: 18px;
+        height: 350px; 
+        margin-bottom: 0px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+    } 
+    
+}
+
