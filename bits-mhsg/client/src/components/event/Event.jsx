@@ -3,7 +3,7 @@ import "./event.css"
 
 import React from 'react'
 
-export default function Event() {
+export default function Event(props) {
   return (
     <div className="event">
         <img
@@ -13,34 +13,33 @@ export default function Event() {
 
         <div className="eventInfo">
             <div className="eventHeading">
-                <span className="eventTitle">Lorem ipsum dolor sit amet</span>
+                <span className="eventTitle">{props.evObj.Title}</span>
                 <div className="eventDetails">
                     <div className="eventDate">
                       <span className="eventDateTxt">Date: </span>
-                      <span className="eventDateVal">12 April 2023</span>
+                      <span className="eventDateVal">{props.evObj.Date}</span>
                     </div>
 
                     <span className="separator">|</span>
 
                     <div className="eventTime">
                       <span className="eventTimeTxt">Time: </span>
-                      <span className="eventTimeVal">4 PM</span>
+                      <span className="eventTimeVal">{props.evObj.Time}</span>
                     </div>
             
                     <span className="separator">|</span>
 
                     <div className="eventVenue">
                       <span className="eventVenueTxt">Venue: </span>
-                      <span className="eventVenueVal">F-106</span>
+                      <span className="eventVenueVal">{props.evObj.Venue}</span>
                     </div>
                 </div>
             </div>
             
             <div className="eventBody">
-            <div className="eventBrief">
-            Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse officiis quia culpa repellat commodi adipisci ad, ratione dicta corrupti minus iste non pariatur aliquam maiores eos delectus impedit quibusdam, quae nemo eum quos. Debitis minima saepe voluptas dignissimos, corrupti ratione iure culpa mollitia! Temporibus. sit amet consectetur adipisicing elit. Sed vel deleniti, a, adipisci dolorum velit aut asaidfsddf recusandae aliquam officiis beatae laborum? Unde sunt corrupti, facere veniam dolorem, praesentium commodi quia, laborum odio nulla fugiat.
+            <div className="eventBrief">{props.evObj.Desc}
             </div>
-            <p className="eventLink">More details: <a href="https://www.facebook.com/groups/BITS.MHSG/permalink/1961189930884848/" className="icon fblink" target="_blank"><i className="SocialLinks fa-brands fa-facebook-square"></i></a><a href="https://www.instagram.com/bits.mhsg/" target="_blank" className="instalink"><i className="SocialLinks fa-brands fa-instagram"></i></a></p>
+            <p className="eventLink">More details: <a href={props.evObj.FbLink} className="icon fblink" target="_blank"><i className="SocialLinks fa-brands fa-facebook-square"></i></a><a href={props.evObj.IgLink} target="_blank" className="instalink"><i className="SocialLinks fa-brands fa-instagram"></i></a></p>
 
             </div>
         </div>

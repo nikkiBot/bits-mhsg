@@ -1,0 +1,67 @@
+.helplineCard{
+    display: flex;
+    width: 380px;
+    background-color: rgb(222, 222, 222);
+    padding: 18px 24px;
+    margin: 15px 10px 20px 15px;
+    border-radius: 7px;
+    align-items: center;
+}
+.helpImg{
+    width: 120px;
+}
+.helpDetails{
+    margin-left: 15px;
+}
+
+.helpDesc{
+    font-size: 18.5px;
+}
+
+.helpPh{
+    margin-top: 2px;
+    font-size: 17px;
+}
+
+.helpLink{
+    /* color: black; */
+}
+
+@media screen and (max-width:400px) {
+    .helplineCard{
+        width: 350px;
+    }
+    .helpDesc {
+        font-size: 15px;
+    }
+    .helpPh {
+        font-size: 14px;
+    }
+    .helpLink{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:900px){
+    .helplineCard {
+        width: 540px;
+    }
+    .helpImg {
+        width: 180px;
+    }
+    .helpDesc {
+        font-size: 25px;
+    }
+    .helpDetails {
+        margin-left: 24px;
+    }
+    .helpPh {
+        font-size: 24px;
+    }
+
+    .helpLink {
+        font-size: 24px;
+    }
+}
+
+

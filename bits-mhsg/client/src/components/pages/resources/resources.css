@@ -53,3 +53,17 @@
 .headerBox:hover + .ulHelpline{
     transform: scaleX(1.25);
 }
+
+@media screen and (max-width:900px){
+    .resources{
+        flex-direction: column-reverse;
+    }
+    .cards{
+        width: 100vw;
+    }
+    .helpline{
+        width: 100vw;
+        padding-bottom: 30px;
+        height: fit-content;
+    }
+}

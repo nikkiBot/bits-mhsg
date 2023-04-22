@@ -1,7 +1,8 @@
 .events {
     display: flex;
     flex-direction: column;
-    margin: 20px 100px
+    margin: 20px 60px;
+    align-items: center;
 }
 
 @media screen and (max-width:450px) {
