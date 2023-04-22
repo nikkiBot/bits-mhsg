@@ -54,7 +54,7 @@
     transform: scaleX(1.25);
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1300px){
     .resources{
         flex-direction: column-reverse;
     }

@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (min-width:600px) and (max-width:900px){
+@media screen and (min-width:600px) and (max-width:1300px){
     .helplineCard {
         width: 540px;
     }
@@ -63,5 +63,6 @@
         font-size: 24px;
     }
 }
+
 
 
