@@ -1,10 +1,11 @@
 import NavBar from "./components/NavBar/NavBar"
+import Footer from "./components/Footer/Footer"
 import Home from "./components/pages/home/Home"
 import { Single } from "./components/pages/single/Single";
 import Events from "./components/pages/events/Events";
 import Whatsnext from "./components/pages/whatsnext/Whatsnext";
 import Resources from "./components/pages/resources/Resources";
-import Articles from "./components/pages/articles/Articles";
+import Articles from "./components/pages/articles/articles";
 import Team from "./components/pages/team/Team";
 import {Route,Routes} from 'react-router-dom';
 import { useEffect, useState } from "react";
@@ -47,37 +48,42 @@ function App() {
           <div id="signin_div"> </div>
           <NavBar/> 
           <Home/> 
+          <Footer/>
         </>
       } />
       <Route path = "/Events" element={ //Events Page
         <>
           <NavBar/> 
-          <Events/> 
+          <Events/>
+          <Footer/> 
         </>
       } />
       <Route path = "/Resources" element={ //Whatsnext Page
         <>
           <NavBar/>
           <Resources/>
+          <Footer/>
         </>
       } />
       <Route path = "/Articles" element={ //Articles Page
         <>
           <NavBar/>
           <Articles/>
+          <Footer/>
         </>
       } />
       <Route path = "/Posts/:id" element={ //Single post Page
         <>
           <NavBar/>
           <Single/>
+          <Footer/>
         </>
       } />
       <Route path = "/Team" element={ //Single post Page
         <>
           <NavBar/>
           <Team/>
-      
+          <Footer/>
         </>
       } />
     </Routes>

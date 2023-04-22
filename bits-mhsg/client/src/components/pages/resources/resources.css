@@ -2,8 +2,24 @@
     width: 100%;
     display: flex;
     background-color: rgb(244, 244, 244);
-    
 }
+
+.cardsHeader{
+    margin-bottom: 3px;
+}
+.headerBox {
+    margin-top: 10px;
+    user-select: none;
+}
+
+.ulCard {
+    width: 140px;
+    height: 3px;
+    background-color: rgb(149, 250, 233);
+    transition: .2s;
+    margin-bottom: 15px;
+}
+
 .cards{
     display: flex;
     flex-direction: column;
@@ -20,4 +36,20 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(244, 244, 244);
+}
+
+.ulHelpline{
+    width: 280px;
+    height: 3px;
+    background-color: rgb(252, 76, 76);
+    transition: .2s;
+    margin-bottom: 15px;
+}
+
+.headerBox:hover+.ulCard {
+    transform: scaleX(1.3);
+}
+
+.headerBox:hover + .ulHelpline{
+    transform: scaleX(1.25);
 }

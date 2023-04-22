@@ -30,7 +30,10 @@ export default function Team() {
     <>
     
     <div className="team">
-      <h1 className="teamHeader">Our Team</h1>
+      <div className="headerBox">
+          <h1 className="teamHeader">The Team</h1>
+      </div>
+      <div className="underline"></div>
       <div className="profileCards">
       <Profile name={det[0].name} pos={det[0].pos} img={ImageList.umangimg} />
       <Profile name={det[1].name} pos={det[1].pos} img={ImageList.nishithimg} />

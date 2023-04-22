@@ -4,6 +4,22 @@
     align-items: center;
 }
 
+.teamHeader{
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.headerBox{
+    user-select: none;
+}
+
+.underline{
+    width: 120px;
+    height: 3px;
+    background-color: rgb(149, 250, 233);
+    transition: .2s ease;
+}
+
 .profileCards{
     width: 85%;
     display: flex;
@@ -11,4 +27,8 @@
     justify-content: center;
     /* background-color: antiquewhite; */
     
+}
+
+.headerBox:hover + .underline{
+    transform: scaleX(1.35);
 }

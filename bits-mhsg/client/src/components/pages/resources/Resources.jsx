@@ -6,7 +6,10 @@ export default function Resources() {
   return (
     <div className="resources">
       <div className="cards">
-        <h1 className="cardsHeadTxt">Resources</h1>
+        <div className="headerBox">
+          <h1 className="cardsHeader">Resources</h1>
+        </div>
+        <div className="ulCard"></div>
         <ResourceCard/>
         <ResourceCard/>
         <ResourceCard/>
@@ -14,7 +17,10 @@ export default function Resources() {
         
       </div>
       <div className="helpline">
-        <h1 className="helplineHeadTxt">Emergency Helpline</h1>
+        <div className="headerBox">
+          <h1 className="helplineHeader">Emergency Helpline</h1>
+        </div>
+        <div className="ulHelpline"></div>
       </div>
     </div>
 )

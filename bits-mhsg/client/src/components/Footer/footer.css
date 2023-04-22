@@ -1,0 +1,168 @@
+.footer{
+    border-radius: 40px 40px 0px 0px;
+    margin-top: 70px;
+    background-color: rgb(239, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.quoteContainer{
+    border-top-left-radius: 40px;
+    width: 50vw;
+    padding: 20px 5px 30px 5px;
+    background-color: rgb(239, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 3px solid rgb(205, 205, 205);
+}
+.quoteHeader{
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+.ulQuote{
+    width: 120px;
+    height: 3px;
+    margin-bottom: 10px;
+    background-color: rgb(180, 182, 181);
+    transition: .3s ease;
+}
+
+.qheaderBox:hover + .ulQuote{
+    transform: scaleX(1.8);
+}
+
+.quoteContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quoteTxt{
+    text-align: center;
+    font-size: 25px;
+}
+.quoteAuthor{
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(108, 108, 108);
+}
+
+.aboutUs{
+    display: flex;
+    width: 45vw;
+    justify-content: space-between;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+.MHSGLogo{
+    
+    height: 180px;
+}
+.BITSLogo{
+    height: 120px;
+}
+
+
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.contactHeader{
+    font-size: 33px;
+    margin-bottom: 2px;
+}
+
+.ulContact{
+    margin-bottom: 25px;
+    width: 90px;
+    height: 3px;
+    transition: .3s ease;
+    background-color: rgb(180, 182, 181);
+}
+.cheaderBox:hover + .ulContact{
+    transform: scaleX(1.7);
+}
+.cheaderBox{
+    margin-bottom: 0px;
+}
+
+.footerLinks {
+    font-size: 27px;
+    margin-right: 21px;
+    color: #01B69B;
+    cursor: pointer;
+}
+.foot-instaLogo {
+    transition: .2s ease;
+}
+
+.foot-fbLogo {
+    transition: .2s ease;
+}
+
+.foot-discordLogo {
+    transition: .2s ease;
+}
+.foot-linkedLogo {
+    margin-right: 0px;
+    transition: .2s ease;
+}
+.foot-linkedLogo:hover{
+    
+    color: #005abb;
+}
+
+.foot-instaLogo:hover {
+    color: #b60143;
+}
+
+.foot-discordLogo:hover {
+    color: #5e71ff;
+}
+
+.foot-fbLogo:hover {
+    color: #255fde;
+}
+
+.email{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:900px){
+    .footer{
+        flex-direction: column;
+    }
+    .quoteContainer{
+        width: 99vw;
+        border: none;
+        padding: 25px 15px 20px 15px;
+        border-radius: 40px 40px 0px 0px;
+        border-bottom: 3px solid rgb(205, 205, 205);
+    }
+    .aboutUs{
+        flex-direction: column;
+        width: 99vw;
+        padding-top: 10px;
+    }
+    .ulContact {
+        margin-bottom: 15px;
+    }
+    .logo{
+        margin-top: 5px;
+        justify-content: center;
+    }
+}
+
+
+

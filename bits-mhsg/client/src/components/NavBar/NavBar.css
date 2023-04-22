@@ -1,13 +1,15 @@
 .Nav {
     width: 100%;
-    height: 50px;
-    background-color: white;
+    height: 60px;
+    /* background-color: white; */
     position: sticky;
     top: 0;
     display: flex;
     align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
     z-index: 999;
+    background-color: rgba(244, 244, 244, 0.4);
+    backdrop-filter: blur(10px);
 }
 
 .topleft,
@@ -24,8 +26,8 @@
 }
 
 .SocialLinks {
-    font-size: 20px;
-    margin-right: 10px;
+    font-size: 23px;
+    margin-right: 21px;
     color: #01B69B;
     cursor: pointer;
 }
@@ -50,32 +52,83 @@
 .NavLink {
     margin-right: 20px;
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 370;
     cursor: pointer;
 }
 
+.NavBox{
+    color: black;
+    padding: 5px 12px;
+    border-radius: 7px;
+    transition: .2s;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.NavBox:hover{
+    background-color: rgb(217, 217, 217);
+}
+
+.instaLogo{
+    transition: .2s ease;
+    margin-right: 0px;
+}
+.fbLogo{
+    transition: .2s ease;  
+}
+.discordLogo{
+    transition: .2s ease;
+}
+.instaLogo:hover{
+    color: #b60143;
+}
+.discordLogo:hover{
+    color: #5e71ff;
+}
+.fbLogo:hover{
+    color: #255fde;
+    
+}
+
 
 .SearchIcon {
-    font-size: 18px;
+    font-size: 20px;
     color: #7CDACB;
     cursor: pointer;
     margin-left: 15px;
 }
 
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:900px) {
 
     .Nav {
         display: flex;
         flex-direction: column-reverse;
-        height: 300px;
-        background-color: black;
+        /* height: 300px; */
+        height: fit-content;
+        
+    }
+    .NavBox{
+        text-align: center;
+        font-size: 23px;
     }
 
     .NavBarList {
         display: flex;
         flex-direction: column;
+    }
+
+    .topleft{
+        display:none;
+    }
+    .topcenter{
+        display: none;
     }
 
     .SearchIcon {
@@ -94,7 +147,7 @@
         margin-bottom: 5px;
         height: 3px;
         width: 26px;
-        background-color: white;
+        background-color: rgb(167, 247, 219);
     }
 
     .topright {
@@ -103,9 +156,12 @@
     }
 
     .Logo {
-        margin-left: 120px;
-        margin-right: 115px;
+        margin-left: 110px;
+        margin-right: 90px;
     }
-
+    .SocialLinks{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 
 }
