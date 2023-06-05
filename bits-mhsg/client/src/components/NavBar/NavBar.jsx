@@ -30,7 +30,8 @@ export default function NavBar() {
 
         <div className="topleft">
         <a href="https://www.facebook.com/groups/BITS.MHSG" target="_blank"><i className="SocialLinks fa-brands fa-facebook-square fbLogo"></i></a>
-        <a href="https://www.instagram.com/bits.mhsg/" target="_blank"><i className="SocialLinks fa-brands fa-discord discordLogo"></i></a>
+        <a href="https://in.linkedin.com/company/bits-mental-health-support-group" target="_blank"><ion-icon name="logo-linkedin" className="SocialLinks linkedLogo"></ion-icon></a>
+        {/* <a href="https://www.instagram.com/bits.mhsg/" target="_blank"><i className="SocialLinks fa-brands fa-discord discordLogo"></i></a> */}
         <a href="https://www.instagram.com/bits.mhsg/" target="_blank"><i className="SocialLinks fa-brands fa-instagram instaLogo"></i></a>
         </div>
 

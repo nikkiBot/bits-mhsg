@@ -1,4 +1,12 @@
 .home{
     display: flex;
-    
 }
+
+@media screen and (max-width:600px){
+    .home{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+

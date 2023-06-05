@@ -102,6 +102,7 @@
     color: #01B69B;
     cursor: pointer;
 }
+
 .foot-instaLogo {
     transition: .2s ease;
 }
@@ -161,6 +162,22 @@
     .logo{
         margin-top: 5px;
         justify-content: center;
+    }
+    ion-icon{
+        position: relative;
+        top: 2px;
+    }
+    .quoteHeader{
+        font-size: 30px;
+    }
+    .quoteTxt{
+        font-size: 22px;
+    }
+    .quoteAuthor{
+        font-size: 23px;
+    }
+    .contactHeader{
+        font-size: 30px;
     }
 }
 

@@ -1,0 +1,31 @@
+.captionHeader{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+.captionTxt{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    color: rgb(13, 13, 13);
+}
+.captionBox{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.carouselBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width:600px){
+    .captionHeader{
+        font-size: 25px;
+    }
+    .captionBox {
+        margin: 10px 20px 20px 20px;
+    }
+    .captionTxt{
+        font-size: 20px;
+    }
+}

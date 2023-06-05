@@ -26,7 +26,7 @@ export default function Footer() {
                         <a href="https://www.facebook.com/groups/BITS.MHSG" target="_blank"><i className="footerLinks fa-brands fa-facebook-square foot-fbLogo"></i></a>
                         <a href="https://www.instagram.com/bits.mhsg/" target="_blank"><i className="footerLinks fa-brands fa-discord foot-discordLogo"></i></a>
                         <a href="https://www.instagram.com/bits.mhsg/" target="_blank"><i className="footerLinks fa-brands fa-instagram foot-instaLogo"></i></a>
-                        <a href="https://in.linkedin.com/company/bits-mental-health-support-group" target="_blank"><i className="footerLinks fa-brands fa-instagram foot-linkedLogo"></i></a>
+                        <a href="https://in.linkedin.com/company/bits-mental-health-support-group" target="_blank"><ion-icon name="logo-linkedin" className="SocialLinks linkedLogo"></ion-icon></a>
                     </div>
                     <div className="email">Email: <a href="mailto:mhsg@hyderabad.bits-pilani.ac.in">mhsg@hyderabad.bits-pilani.ac.in </a></div>
                 </div>

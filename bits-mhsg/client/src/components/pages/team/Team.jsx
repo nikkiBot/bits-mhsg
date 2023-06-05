@@ -9,21 +9,17 @@ export default function Team() {
     {
       id:1,
       name:"Umang Lal",
-      pos:"President", 
-      img:"../../profileImg/Umang.png"
+      pos:"President",
     },
     {
       id:2,
       name:"Nishith Kumar",
       pos:"Website Dev Lead", 
-      img:"../../profileImg/Nishith.png"
-      
     },
     {
       id:3,
       name:"Abhinav Srivastava",
       pos:"Treasurer", 
-      img:"../../profileImg/Abhinav.png"
     }
   ]
   return (
@@ -37,7 +33,7 @@ export default function Team() {
       <div className="profileCards">
       <Profile name={det[0].name} pos={det[0].pos} img={ImageList.umangimg} />
       <Profile name={det[1].name} pos={det[1].pos} img={ImageList.nishithimg} />
-      <Profile name={det[2].name} pos={det[2].name} img={ImageList.abhinavimg}/>
+      <Profile name={det[2].name} pos={det[2].pos} img={ImageList.abhinavimg}/>
       <Profile />
       <Profile />
       <Profile />
