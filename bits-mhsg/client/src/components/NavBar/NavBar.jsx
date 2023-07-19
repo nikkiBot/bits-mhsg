@@ -1,10 +1,22 @@
 // import { Link } from "react-router-dom";
 import { Link } from "react-router-dom"
 import "./NavBar.css"
+import {useState, useEffect} from 'react'
 
 export default function NavBar() {
   // const user = true;
   let count=0;
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const setWindowDimensions = () => {
+    setWindowWidth(window.innerWidth)
+  }
+  useEffect(() => {
+    window.addEventListener('resize', setWindowDimensions);
+    return () => {
+      window.removeEventListener('resize', setWindowDimensions)
+    }
+  }, [])
+  console.log({windowWidth});
   function dropdown(){
     console.log(window.innerWidth);
     let viewwidth=window.innerWidth;
@@ -25,8 +37,9 @@ export default function NavBar() {
     
   }
 
+
   return (
-    <div className = "Nav">
+    <nav className = "Nav">
 
         <div className="topleft">
         <a href="https://www.facebook.com/groups/BITS.MHSG" target="_blank"><i className="SocialLinks fa-brands fa-facebook-square fbLogo"></i></a>
@@ -59,7 +72,7 @@ export default function NavBar() {
             </div>
         </div>
 
-    </div>
+    </nav>
   )
 }
 

@@ -11,24 +11,25 @@ export const Post = ({post}) => {
       {/* console.log(post._id);
       console.log(post.postID); */}
       {/* {post.postCover && the next image component - to be added later} */}
+      <Link to={`Posts/${post._id}`} className="link">
         <img
         className="postImg"
         src={require('../carousel_images/silent-struggle-1.jpg')}
         alt="img not rendered"/>
-        <div className="postInfo">
-          <Link to={`Posts/${post._id}`} className="link">
+        <div className="postData">
             {/**
              * it has to be `posts/${post._id}` because the frontend part to reach a single post was written that way
              * Do not confuse with the localhost:5000/api/posts/_id url
-             */}
+            */}
+          <div className="postDet">
             <span className="postTitle">{post.title}</span>
-          </Link>
-            <hr/>
-            <span className="postDate">{new Date(post.createdAt).toDateString()}</span>
+            <p className="postBrief">
+              {post.postDescription} 
+            </p>
+          </div>
+        <span className="postDate">{new Date(post.createdAt).toDateString()}</span>
         </div>
-        <p className="postBrief">
-          {post.postDescription} 
-        </p>
+        </Link>
     </div>
   )
 }
